@@ -1,0 +1,56 @@
+#burger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.headerDroite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 22px;
+    color: var(--brun);
+    font-family: 'Mulish', sans-serif;
+
+    font-weight: normal;
+
+    width: 45%;
+}
+
+.selected {
+    border-bottom: 2px solid var(--brun);
+    pointer-events: none;
+}
+
+.headerDroite a {
+    display: inline-block;
+}
+
+#headerCog {
+    stroke: var(--brun);
+}
+
+.flagContainer {
+    margin-top: unset;
+}
+
+.flag {
+    transform: translateY(-72px);
+    margin: 1px 0;
+    width: 42px;
+}
+
+.flag img {
+    width: 42px; 
+    margin: unset;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* MAIN */

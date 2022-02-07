@@ -1,0 +1,105 @@
+#burger {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.headerDroite {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 22px;
+    color: var(--brun);
+    font-family: 'Mulish', sans-serif;
+
+    font-weight: normal;
+
+    width: 45%;
+}
+
+.headerDroite a {
+    display: inline-block;
+}
+
+#headerCog {
+    stroke: var(--brun);
+}
+
+main {
+    position: absolute;
+
+    top: 50%;
+    left: unset;
+    transform: translateY(-50%);
+
+    width: 100%;
+
+    margin: 0 auto;
+    justify-content: space-between;
+
+    flex-direction: row;
+}
+
+.flagContainer {
+    margin-top: unset;
+}
+
+.flag {
+    transform: translateY(-72px);
+    margin: 1px 0;
+    width: 42px;
+}
+
+.flag img {
+    width: 42px;
+    margin: unset;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+/* MAIN */
+
+.zonePhoto {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+
+    width: 45.5%;
+    height: 329px;
+}
+
+.zonePhoto img {
+    height: 100%;
+}
+
+.zoneTexte {
+    width: 45.5%;
+    height: 329px;
+}
+
+.bonjour {
+    margin: 0;
+    text-align: left;
+}
+
+p, h2 {
+    font-size: 22px;
+
+    margin: 25px 0;
+
+    max-width: 280px;
+    text-align: left;
+}
+
+.decouvrir {
+    position: absolute;
+    bottom: 0;
+
+    margin: 50px 0 0 0;
+}

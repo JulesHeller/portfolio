@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Heller</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Mulish&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --brun: #A88972;
+            --beige: #F6D8B9;
+            --bleu: #A7BAC7;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Mulish', sans-serif;
+        }
+                
+        /* font-family: 'Rubik', sans-serif;
+        font-family: 'Damion', cursive;
+        font-family: 'Mulish', sans-serif; */
+
+        .loadingScreen {
+            position: fixed;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            background: radial-gradient(#4A6270, #2A3F4D);
+
+            z-index: 50;
+
+            transition: 0.5s;
+        }
+
+        .loadingContainer {
+            position: absolute;
+
+            width: 100%;
+
+            top: 50%;
+            transform: translateY(-50%);
+
+            text-align: center;
+        }
+
+        .loadingContainer>*{
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Damion', cursive;
+            font-weight: normal;
+            font-size: 40px;
+            max-width: unset;
+            margin-bottom: 75px !important;
+        }
+        
+        .loadingScreen p {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            max-width: unset;
+        }
+
+        /* LOADING SVG */
+
+        #load {
+            position: relative;
+
+            width: 75px;
+            height: 75px;
+            animation: tourne 1.5s infinite;
+        }
+
+        #load circle {
+            fill: none;
+            stroke: var(--beige);
+            stroke-width: 5;
+
+            stroke-linecap: round;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+
+            transform: translate(2.5px, 2.5px);
+            animation: loadAnim 3s linear infinite;
+        }
+
+        @keyframes tourne {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loadAnim {
+            0%,100% {
+                stroke-dashoffset: 100;
+            }
+
+            50% {
+                stroke-dashoffset: 0;
+            }
+
+            50.1% {
+                stroke-dashoffset: 200;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles/index-tel.css">
+    <link rel="stylesheet" href="styles/index-PC.css" media="screen and (min-width: 800px)">
+
+    <link rel="icon" href="jh.png">
+</head>
+
+<body>
+    <div class="loadingScreen">
+        <div class="loadingContainer">
+            <p> Jules Heller </p>
+            <h1> artisan du web </h1>
+            <svg id="load">
+                <circle pathLength="100" cx="35" cy="35" r="35"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="trigger" id="cross" width="57" height="57" viewBox="0 0 24 24"
+            fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+
+        <div class="containerMenu">
+            <a href="apropos.html"> à propos </a>
+            <a href="travail.html"> mon travail </a>
+            <a href="contact.html"> contact </a>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="cog" id="menuCog" width="63" height="63"
+                    viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                    </path>
+                </svg>
+
+                <div class="flagContainer">
+                    <a href="#" class="flag">
+                        <img src="img/french.jpg" alt="Drapeau Français">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="img/english.jpg" alt="Drapeau Anglais">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <a class="JH" href="index.html"> <span id="hj">Jules</span><span id="hh">Heller</span></a>
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="trigger" id="burger" width="50" height="50" viewBox="0 0 24 24"
+            fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+
+        <div class="headerDroite">
+            <a href="apropos.html"> à propos </a>
+            <a href="travail.html"> mon travail </a>
+            <a href="contact.html"> contact </a>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="cog" id="headerCog" width="42" height="42"
+                    viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                    </path>
+                </svg>
+
+                <div class="flagContainer">
+                    <a href="#" class="flag">
+                        <img src="img/french.jpg" alt="Drapeau Français">
+                    </a>
+                    <a href="#" class="flag">
+                        <img src="img/english.jpg" alt="Drapeau Anglais">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="zonePhoto">
+            <img src="img/photo1.jpg" alt="Jules Heller, Développeur Web">
+        </div>
+
+        <div class="zoneTexte">
+            <p class="bonjour"> Bonjour ! </p>
+
+            <h2> Je m'appelle Jules Heller.</h2>
+
+            <p class="texte1"> Je suis développeur web spécialisé front-end, mais je fais aussi du graphisme et de la
+                vidéo. <span id="curseur">|</span></p>
+
+            <button class="decouvrir"> <a href="travail.html"> découvrir mon travail </a> </button>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            &copy; <span>J</span><span>H</span>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

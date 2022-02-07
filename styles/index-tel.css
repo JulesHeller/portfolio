@@ -1,0 +1,230 @@
+@media screen and (min-height: 840px) {
+    main {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+.byeByeLoading {
+    transform: translateY(-100%);
+}
+
+img {
+    user-select: none;
+}
+
+::selection {
+    background-color: var(--beige);
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
+
+.menu {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: var(--brun);
+
+    transform: translateY(-100%);
+    transition: 0.4s;
+
+    z-index: 10;
+}
+
+#cross {
+    position: absolute;
+
+    right: 0;
+    margin: 15px 21px;
+}
+
+.containerMenu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.containerMenu>* {
+    margin: 22px 0;
+}
+
+.menu svg {
+    stroke: white;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    font-size: 30px;
+}
+
+.menuOuvert {
+    transform: translateY(0);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 15px 25px;
+}
+
+.JH {
+    font-size: 40px;
+
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+#hj, #hh {
+    display: inline-block;
+    width: 27px;
+
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+.JHouvert>* {
+    width: 118px !important;
+}
+
+.headerDroite {
+    display: none;
+}
+
+#burger {
+    stroke: var(--brun);
+}
+
+.flagContainer {
+    position: absolute;
+    overflow: hidden;
+
+    margin-top: -8px;
+}
+
+.flag {
+    display: block;
+
+    margin: 12px 0;
+
+    width: 63px;
+
+    opacity: 1;
+    transform: translateY(-98px);
+
+    transition: 0.3s;
+}
+
+.flag img {
+    display: block;
+    width: 50px;
+    margin: 5px auto;
+}
+
+.flagWoosh .flag {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cog {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tourne {
+    transform: rotate(45deg);
+}
+
+footer {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--brun);
+}
+
+footer div {
+    margin: 0 25px 20px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.zonePhoto {
+    width: fit-content;
+    height: fit-content;
+
+    margin: 40px auto 0;
+}
+
+.bonjour {
+    font-family: 'Rubik', sans-serif;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    text-align: center;
+
+    margin: 50px auto;
+}
+
+p, h2 {
+    margin: 25px auto;
+    max-width: 240px;
+
+    font-weight: normal;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+#curseur {
+    display: inline;
+    transition: 0.15s;
+}
+
+.decouvrir {
+    display: block;
+
+    margin: 50px auto;
+
+    font-family: 'Mulish', sans-serif;
+    color: white;
+    font-size: 18px;
+
+    border: none;
+    background: var(--brun);
+
+    width: 216px;
+    height: 54px;
+    border-radius: 27px;
+
+    cursor: pointer;
+}
