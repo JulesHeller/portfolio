@@ -54,3 +54,27 @@ footer {
 }
 
 /* MAIN */
+
+main {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#search {
+    cursor: pointer;
+}
+
+.real:hover {
+    transform: scale(1.2);
+}
+
+.enteteReal {
+    margin: 50px 0;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}

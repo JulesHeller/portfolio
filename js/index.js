@@ -1,5 +1,5 @@
-setTimeout(stopLoading, 2500);
-setTimeout(boucleTexte, 4000);
+setTimeout(stopLoading, 1000);
+setTimeout(boucleTexte, 2000);
 document.querySelector(".texte1").innerHTML = '<span id="curseur">|</span>';
 
 function stopLoading() {

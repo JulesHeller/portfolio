@@ -6,6 +6,10 @@
     display: none;
 }
 
+#hj, #hh {
+    padding-top: 0;
+}
+
 .headerDroite {
     display: flex;
     align-items: center;

@@ -104,6 +104,8 @@ header {
     display: inline-block;
     width: 27px;
 
+    padding-top: 10px;
+
     overflow: hidden;
 
     transition: 0.5s;

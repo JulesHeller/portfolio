@@ -17,6 +17,10 @@ img {
     user-select: none;
 }
 
+h1 {
+    font-family: "Rubik", sans-serif;
+}
+
 ::selection {
     background-color: var(--beige);
 }
@@ -168,3 +172,24 @@ footer div {
 
 /* MAIN */ 
 
+.enteteReal {
+    text-align: center;
+    flex-direction: column;
+}
+
+.realisations {
+    width: 100%;
+}
+
+.ligne {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 75px 0;
+}
+
+.real {
+    width: 200px;
+    height: 200px;
+    background-color: var(--bleu);
+}
