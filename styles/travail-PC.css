@@ -55,8 +55,37 @@ main {
     width: 800px;
 }
 
-#search {
-    cursor: pointer;
+.enteteReal {
+    position: relative;
+    text-align: left;
+}
+
+.recherche {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: unset;
+}
+
+.recherche:hover{
+    width: 100px;
+    height: 100px;
+}
+
+.realisations {
+    flex-direction: row;
+    width: unset;
+
+    gap: 100px;
+    row-gap: 75px;
+
+    margin: 70px auto;
+}
+
+.real {
+    position: relative;
+    margin: unset;
 }
 
 .real:hover {
@@ -65,11 +94,26 @@ main {
 
 .enteteReal {
     margin: 50px 0;
+    width: 100%;
+}
+
+.black-box {
+    position: absolute;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, 0.404);
+    height: 100%;
+    width: 100%;
 
     display: flex;
-
-    flex-direction: row;
-
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+
+    transition: inherit;
+}
+
+.black-box:hover {
+    opacity: 1;
 }

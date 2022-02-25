@@ -155,22 +155,41 @@ footer div {
     transform: rotate(45deg);
 }
 
-/* MAIN */ 
+/* MAIN */
 
 .enteteReal {
-    text-align: center;
     flex-direction: column;
+    text-align: center;
+}
+
+.recherche {
+    display: flex;
+
+    background: var(--brun);
+    width: 40px;
+    height: 40px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+    margin: 0 auto;
+}
+
+.recherche p {
+    color: white;
 }
 
 .realisations {
-    width: 100%;
-}
-
-.ligne {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
-    margin: 75px 0;
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    width: fit-content;
+    margin: 30px auto;
 }
 
 .real {
@@ -178,5 +197,21 @@ footer div {
     height: 200px;
     background-color: var(--bleu);
 
+    margin: 15px 0;
+
     transition: 0.2s;
+
+    background-size: 100%;
+}
+
+.border {
+    border: var(--bleu) 1px solid;
+}
+
+.real:hover {
+    border: none;
+}
+
+.black-box {
+    display: none;
 }

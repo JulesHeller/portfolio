@@ -19,6 +19,10 @@
             --bleu: #A7BAC7;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: 'Mulish', sans-serif;
@@ -109,38 +113,62 @@
         <div class="enteteReal">
             <h1> Mes réalisations </h1>
 
+            <div class="recherche">
+                <svg id="search" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.4583 25.7917C22.0607 25.7917 25.7917 22.0607 25.7917 17.4583C25.7917 12.856 22.0607 9.125 17.4583 9.125C12.856 9.125 9.125 12.856 9.125 17.4583C9.125 22.0607 12.856 25.7917 17.4583 25.7917Z"
+                        stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M27.875 27.875L23.3438 23.3438" stroke="white" stroke-width="3" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
 
-            <svg id="search" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="20" fill="#A88972" />
-                <path
-                    d="M17.4583 25.7917C22.0607 25.7917 25.7917 22.0607 25.7917 17.4583C25.7917 12.856 22.0607 9.125 17.4583 9.125C12.856 9.125 9.125 12.856 9.125 17.4583C9.125 22.0607 12.856 25.7917 17.4583 25.7917Z"
-                    stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M27.875 27.875L23.3438 23.3438" stroke="white" stroke-width="3" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+                <div class="options">
+                </div>
+            </div>
         </div>
 
         <div class="realisations">
-            <div class="ligne">
-                <a class="real"></a>
-                <a class="real"></a>
-                <a class="real"></a>
-            </div>
-            <div class="ligne">
-                <a class="real"></a>
-                <a class="real"></a>
-                <a class="real"></a>
-            </div>
-            <div class="ligne">
-                <a class="real"></a>
-                <a class="real"></a>
-                <a class="real"></a>
-            </div>
-            <div class="ligne">
-                <a class="real"></a>
-                <a class="real"></a>
-                <a class="real"></a>
-            </div>
+            <a class="real border prog" href="#" target="_blank" style="background-image: url(img/real/mastermind.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
+
+            <a class="real prog" href="#" target="_blank" style="background-image: url(img/real/carres.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
+
+            <a class="real prog" href="#" target="_blank" style="background-image: url(img/real/seve.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
+
+            <a class="real prog" href="#" target="_blank" style="background-image: url(img/real/bucheron.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>  
+            </a>
+
+            <a class="real prog" href="#" target="_blank" style="background-image: url(img/real/hockey.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
+
+            <a class="real" href="#" target="_blank" style="background-image: url(img/real/soleil.jpg);">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
+
+            <a class="real" href="#" target="_blank">
+                <div class="black-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" fill-rule="evenodd"><path d="M18 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8c0-1.1.9-2 2-2h5M15 3h6v6M10 14L20.2 3.8"/></g></svg>
+                </div>
+            </a>
         </div>
     </main>
 

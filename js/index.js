@@ -1,9 +1,21 @@
+if (localStorage.getItem("hasLoaded") != "yes") {
+    document.querySelector(".loadingScreen").style.display = "block";
+}
 setTimeout(stopLoading, 1000);
-setTimeout(boucleTexte, 2000);
+
+if (localStorage.getItem("hasLoaded") == "yes") {
+    setTimeout(boucleTexte, 1000);
+} else {
+    setTimeout(boucleTexte, 2000);
+}
+
 document.querySelector(".texte1").innerHTML = '<span id="curseur">|</span>';
 
 function stopLoading() {
     document.querySelector(".loadingScreen").classList.add("byeByeLoading");
+    setTimeout(() => {
+        localStorage.setItem("hasLoaded","yes");
+    }, 500);
 }
 
 if (document.body.clientWidth > 800) {
