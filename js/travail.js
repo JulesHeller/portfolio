@@ -52,5 +52,3 @@ function menu() {
         })
     }, 200)
 }
-
-var isText = 0;
